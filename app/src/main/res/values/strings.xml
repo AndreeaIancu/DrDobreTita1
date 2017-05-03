@@ -1,0 +1,13 @@
+<resources>
+        <string name="app_name">DrDobreTita</string>
+        <string name="business_name">CABINET MEDICAL DE PEDIATRIE</string>
+        <string name="doctor_name">Dr. Tita Dobre</string>
+        <string name="description">Cabinetul nostru isi dedica toate resursele pentru a asigura fiecarui client servicii medicale profesioniste la cele mai inalte standarde. Spre beneficiul dvs. aveti la dispozitie un medic cu o reputatie excelenta si experienta de peste 35 de ani in domeniu. Va asteptam la cabinet si va dorim multa sanatate!</string>
+        <string name="doctor_spec">Pediatrie</string>
+        <string name="doctor_subspec">Pediatrie \nNeonatologie \nPneumologie</string>
+        <string name="address">Adresa:\t\t\t\t\t\t Str. Libertatii nr. 140B, \n\t\t\t\t\t\t\t\t\t\t Teleorman, Alexandria, Romania</string>
+        <string name="open">Deschis:\t\t\t\t\t Mo. - Fr. 17:00 - 19:00</string>
+        <string name="phone_no">Telefon:\t\t\t\t\t +40 347 409 203</string>
+        <string name="email">Email:\t\t\t\t\t\t\t dr.dobre.tita@domain.com</string>
+</resources>
+

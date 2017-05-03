@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    android:fillViewport="true"
+    tools:context="com.example.android.drdobretita.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/business_name"
+                style="@style/business_name"
+                android:drawableBottom="@drawable/ic_local_hospital_black_24dp"
+                android:drawableTint="#F44336"
+                android:text="@string/business_name" />
+
+            <ImageView
+                android:id="@+id/doctor_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/business_name"
+                android:paddingLeft="10dp"
+                android:src="@drawable/doctor" />
+
+            <TextView
+                android:id="@+id/doctor_name"
+                style="@style/doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/business_name"
+                android:layout_toRightOf="@id/doctor_pic"
+                android:text="@string/doctor_name" />
+
+            <TextView
+                android:id="@+id/specialy1"
+                style="@style/doctor_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/doctor_name"
+                android:layout_toRightOf="@id/doctor_pic"
+                android:text="Specializari:" />
+
+            <TextView
+                android:id="@+id/specialy2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specialy1"
+                android:layout_toRightOf="@id/doctor_pic"
+                android:padding="16dp"
+                android:text="@string/doctor_subspec"
+                android:textColor="#0D47A1" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90CAF9"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                style="@style/Icon_style"
+                android:drawableTop="@drawable/ic_phone_black_24dp"
+                android:text="CALL" />
+
+            <TextView
+                style="@style/Icon_style"
+                android:drawableTop="@drawable/ic_email_black_24dp"
+                android:text="EMAIL" />
+
+            <TextView
+                style="@style/Icon_style"
+                android:drawableTop="@drawable/ic_map_black_24dp"
+                android:text="MAP" />
+
+            <TextView
+                style="@style/Icon_style"
+                android:drawableTop="@drawable/ic_event_available_black_24dp"
+                android:text="TERM" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/info_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informatii:" />
+
+        <TextView
+            style="@style/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/description" />
+
+        <TextView
+            style="@style/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open" />
+
+        <TextView
+            style="@style/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/address" />
+
+        <TextView
+            style="@style/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_no" />
+
+        <TextView
+            style="@style/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
