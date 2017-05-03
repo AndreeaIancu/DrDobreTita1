@@ -17,21 +17,21 @@
     </style>
 
     <style name="Icon_style">
-        <item name="android:drawableTint">#0D47A1</item>
+        <item name="android:drawableTint">@color/dark_blue</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#0D47A1</item>
+        <item name="android:textColor">@color/dark_blue</item>
     </style>
 
     <style name="business_name">
         <item name="android:fontFamily">sans-serif</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#0D47A1</item>
-        <item name="android:background">#90CAF9</item>
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:background">@color/icon_background_blue</item>
         <item name="android:paddingBottom">8dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:layout_alignParentTop">true</item>
@@ -48,7 +48,7 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingTop">16dp</item>
         <item name="android:paddingBottom">16dp</item>
-        <item name="android:textColor">#0D47A1</item>
+        <item name="android:textColor">@color/dark_blue</item>
     </style>
 
     <style name="doctor_info">
@@ -57,7 +57,7 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">#0D47A1</item>
+        <item name="android:textColor">@color/dark_blue</item>
     </style>
 
     <style name="info_title">
@@ -67,7 +67,7 @@
         <item name="android:paddingBottom">8dp</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#0D47A1</item>
+        <item name="android:textColor">@color/dark_blue</item>
     </style>
 
     <style name="info">
@@ -75,15 +75,24 @@
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingTop">0dp</item>
         <item name="android:paddingBottom">8dp</item>
-        <item name="android:textColor">#0D47A1</item>
+        <item name="android:textColor">@color/dark_blue</item>
     </style>
 
     <style name="backgroundStyle">
-        <item name="android:src">@drawable/spital</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">match_parent</item>
         <item name="android:scaleType">centerCrop</item>
-        <item name="android:alpha">0.5</item>
+        <item name="android:alpha">0.2</item>
+    </style>
+
+    <style name="doctor_pic_style">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:background">@color/dark_blue</item>
+        <item name="android:cropToPadding">true</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_width">@dimen/doctor_pic_width</item>
+        <item name="android:layout_height">@dimen/doctor_pic_height</item>
     </style>
 </resources>
 

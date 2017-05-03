@@ -5,133 +5,144 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3F2FD"
+    android:background="@color/light_blue"
     android:fillViewport="true"
-    tools:context="com.example.android.drdobretita.MainActivity">
+    tools:context="com.example.android.drdobretita1.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <RelativeLayout
+        <ImageView
+            style="@style/backgroundStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/business_name"
-                style="@style/business_name"
-                android:drawableBottom="@drawable/ic_local_hospital_black_24dp"
-                android:drawableTint="#F44336"
-                android:text="@string/business_name" />
-
-            <ImageView
-                android:id="@+id/doctor_pic"
-                android:layout_width="wrap_content"
-                android:layout_height="160dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_below="@id/business_name"
-                android:paddingLeft="10dp"
-                android:src="@drawable/doctor" />
-
-            <TextView
-                android:id="@+id/doctor_name"
-                style="@style/doctor_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/business_name"
-                android:layout_toRightOf="@id/doctor_pic"
-                android:text="@string/doctor_name" />
-
-            <TextView
-                android:id="@+id/specialy1"
-                style="@style/doctor_info"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/doctor_name"
-                android:layout_toRightOf="@id/doctor_pic"
-                android:text="Specializari:" />
-
-            <TextView
-                android:id="@+id/specialy2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/specialy1"
-                android:layout_toRightOf="@id/doctor_pic"
-                android:padding="16dp"
-                android:text="@string/doctor_subspec"
-                android:textColor="#0D47A1" />
-
-        </RelativeLayout>
+            android:layout_height="@dimen/backgroung_image_height"
+            android:src="@drawable/spital" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#90CAF9"
-            android:orientation="horizontal"
-            android:paddingBottom="8dp"
-            android:paddingTop="8dp">
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/business_name"
+                    style="@style/business_name"
+                    android:drawableBottom="@drawable/ic_local_hospital_black_24dp"
+                    android:drawableTint="@color/red"
+                    android:text="@string/business_name" />
+
+
+                <ImageView
+                    android:id="@+id/doctor_pic"
+                    style="@style/doctor_pic_style"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/business_name"
+                    android:src="@drawable/doctor" />
+
+
+                <TextView
+                    android:id="@+id/doctor_name"
+                    style="@style/doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/business_name"
+                    android:layout_toRightOf="@id/doctor_pic"
+                    android:text="@string/doctor_name" />
+
+                <TextView
+                    android:id="@+id/specialy1"
+                    style="@style/doctor_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctor_name"
+                    android:layout_toRightOf="@id/doctor_pic"
+                    android:text="@string/specializari" />
+
+                <TextView
+                    android:id="@+id/specialy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/specialy1"
+                    android:layout_toRightOf="@id/doctor_pic"
+                    android:padding="16dp"
+                    android:text="@string/doctor_subspec"
+                    android:textColor="@color/dark_blue" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/icon_background_blue"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/Icon_style"
+                    android:drawableTop="@drawable/ic_phone_black_24dp"
+                    android:text="@string/call" />
+
+                <TextView
+                    style="@style/Icon_style"
+                    android:drawableTop="@drawable/ic_email_black_24dp"
+                    android:text="@string/email_icon" />
+
+                <TextView
+                    style="@style/Icon_style"
+                    android:drawableTop="@drawable/ic_map_black_24dp"
+                    android:text="@string/map" />
+
+                <TextView
+                    style="@style/Icon_style"
+                    android:drawableTop="@drawable/ic_event_available_black_24dp"
+                    android:text="@string/term" />
+
+            </LinearLayout>
 
             <TextView
-                style="@style/Icon_style"
-                android:drawableTop="@drawable/ic_phone_black_24dp"
-                android:text="CALL" />
+                style="@style/info_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/informatii" />
 
             <TextView
-                style="@style/Icon_style"
-                android:drawableTop="@drawable/ic_email_black_24dp"
-                android:text="EMAIL" />
+                style="@style/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description" />
 
             <TextView
-                style="@style/Icon_style"
-                android:drawableTop="@drawable/ic_map_black_24dp"
-                android:text="MAP" />
+                style="@style/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/open" />
 
             <TextView
-                style="@style/Icon_style"
-                android:drawableTop="@drawable/ic_event_available_black_24dp"
-                android:text="TERM" />
+                style="@style/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address" />
+
+            <TextView
+                style="@style/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_no" />
+
+            <TextView
+                style="@style/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
 
         </LinearLayout>
-
-        <TextView
-            style="@style/info_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Informatii:" />
-
-        <TextView
-            style="@style/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/description" />
-
-        <TextView
-            style="@style/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/open" />
-
-        <TextView
-            style="@style/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/address" />
-
-        <TextView
-            style="@style/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/phone_no" />
-
-        <TextView
-            style="@style/info"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/email" />
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>
 
